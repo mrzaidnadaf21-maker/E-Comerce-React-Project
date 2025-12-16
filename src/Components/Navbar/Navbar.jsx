@@ -3,7 +3,6 @@ import AmberLogo from "../../assets/amber-logo.png";
 import { IoSearch } from "react-icons/io5";
 import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
-import Wishlist from "../Wishlist/Wishlist";
 
 const Navbar = ({
   handleScroll,
