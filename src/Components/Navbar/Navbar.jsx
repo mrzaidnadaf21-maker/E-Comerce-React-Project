@@ -33,7 +33,7 @@ const Navbar = ({
               type="text"
               placeholder="Search...."
               autoComplete="off"
-              className="h-[7vh] max-sm:h-[5vh] pl-4 flex-1 focus:outline-none w-[20px] placeholder-transparent sm:placeholder-gray-400"
+              className="h-[7vh] max-sm:h-[4vh] pl-4 flex-1 focus:outline-none w-[20px] "
               onFocus={handleScroll}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
