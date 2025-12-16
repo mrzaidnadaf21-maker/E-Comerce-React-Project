@@ -33,12 +33,12 @@ const Navbar = ({
               type="text"
               placeholder="Search...."
               autoComplete="off"
-              className="h-[7vh] max-sm:h-[5vh] pl-4 flex-1 focus:outline-none w-[20px]"
+              className="h-[7vh] max-sm:h-[5vh] pl-4 flex-1 focus:outline-none w-[20px] placeholder-transparent sm:placeholder-gray-400"
               onFocus={handleScroll}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button className="flex justify-center items-center h-full aspect-square rounded-full bg-amber-600 text-white search-icons">
-              <IoSearch className="text-base" />
+              <IoSearch className="text-base" />{" "}
             </button>
           </div>
         </div>
