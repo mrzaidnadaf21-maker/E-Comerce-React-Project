@@ -52,7 +52,7 @@ const Banner = () => {
 
   return (
     <section
-      className={`min-h-[45vh] sm:h-[40vh] md:h-[60vh] md:w-full bg-cover bg-[right_20%] bg-top mt-[15vh] ${
+      className={`h-[40vh] sm:h-[40vh] md:h-[60vh] md:w-full bg-cover bg-[right_20%] bg-top mt-[15vh] ${
         isMobile ? "bg-gray-300" : ""
       }`}
       style={{
