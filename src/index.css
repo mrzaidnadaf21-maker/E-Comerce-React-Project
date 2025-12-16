@@ -1,0 +1,25 @@
+@import "tailwindcss";
+/* Hide Scrollbar but still allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* @media screen and (min-width: 320px) {
+  .search-main {
+    align-items: center;
+  }
+  .search-boxs {
+    height: 30px !important;
+  }
+
+  .search-icons {
+    width: 22px !important;
+    height: 22px;
+    margin-top: -2px;
+  }
+} */
