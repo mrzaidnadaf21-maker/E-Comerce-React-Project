@@ -41,10 +41,20 @@ const Banner = () => {
 
   const { hours, minutes, seconds } = formatTime(timeLeft);
 
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 640);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <section
-      className="h-[40vh] sm:h-[40vh] md:h-[60vh] md:w-full bg-cover bg-[right_20%] sm:bg-center bg-top mt-[15vh]"
-      style={{ backgroundImage: `url(${BannerImage})` }}
+      className="h-[40vh] sm:h-[40vh] md:h-[60vh] md:w-full bg-cover bg-[right_20%] bg-top mt-[15vh]"
+      style={{
+        backgroundImage: isMobile ? "none" : `url(${BannerImage})`,
+      }}
     >
       {/* Banner */}
       <div className="max-w-[1200px] mx-auto px-7 sm:px-7 md:px-10 h-full flex flex-col justify-center gap-3">

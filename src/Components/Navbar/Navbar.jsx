@@ -27,18 +27,18 @@ const Navbar = ({
         </div>
 
         {/* CENTER - Search Bar */}
-        <div className="flex-1 flex justify-center px-3 mt-1 search-main ">
+        <div className="flex-1 flex justify-center px-3 mt-1">
           <div className=" flex w-full max-w-[500px] p-1 rounded-full border-2 border-amber-600 search-boxs h-8 sm:h-12">
             <input
               type="text"
               placeholder="Search...."
               autoComplete="off"
-              className="h-[7vh] max-sm:h-[4vh] pl-4 flex-1 focus:outline-none w-[20px] "
+              className="h-[7vh] max-sm:h-[3vh] pl-4 flex-1 focus:outline-none w-[20px] "
               onFocus={handleScroll}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button className="flex justify-center items-center h-full aspect-square rounded-full bg-amber-600 text-white search-icons">
-              <IoSearch className="text-base" />{" "}
+              <IoSearch />
             </button>
           </div>
         </div>
